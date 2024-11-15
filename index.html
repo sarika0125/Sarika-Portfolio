@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +12,49 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            line-height: 1.6;
         }
+
         header {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
         header nav a {
             margin: 0 15px;
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
+
         header nav a:hover {
             text-decoration: underline;
         }
+
         section {
-            padding: 20px;
+            padding: 40px;
             margin: 20px 0;
             background-color: white;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        section h2 {
+            color: #333;
+        }
+
+        .about, .projects, .contact, .experience {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .resume-btn {
             background-color: #4CAF50;
             color: white;
@@ -41,20 +63,35 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
+            text-align: center;
         }
+
         .resume-btn:hover {
             background-color: #45a049;
         }
+
         .img-container {
             text-align: center;
             margin-top: 20px;
         }
+
         .img-container img {
             max-width: 100%;
             height: auto;
         }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -68,16 +105,14 @@
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="about">
         <h2>About Me</h2>
         <p>Hello! I'm Sarika Reddy Vontary, a passionate Software Engineer with experience in data analysis, software development, and cloud computing. I specialize in developing scalable applications using modern technologies like Python, Java, and AWS.</p>
         <p>I have worked on a variety of projects ranging from building ETL pipelines, automating reporting systems, to developing custom dashboards using tools like Tableau, Power BI, and Looker. My goal is to create software solutions that drive data-driven decisions and optimize business processes.</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="experience">
         <h2>Experience</h2>
-        
-        
 
         <h3>Software Engineer | Hilton, Virginia</h3>
         <p><strong>January 2023 – Present</strong></p>
@@ -87,75 +122,60 @@
             <li>Developed ETL workflows with Hive and Hadoop to streamline data processing and enhance reporting efficiency.</li>
             <li>Developed scripts for importing/exporting data across multiple environments, migrated SQL Server, and worked on AWS to generate clean files in Amazon S3 and deploy files to Amazon EC2 Clusters.</li>
         </ul>
-        h3>Business Analyst Intern | Health Net, CA</h3>
+
+        <h3>Business Analyst Intern | Health Net, CA</h3>
         <p><strong>March 2022 – June 2022</strong></p>
         <ul>
             <li>Developed custom Tableau dashboards to empower cross-functional teams with immediate, action-driven business KPIs.</li>
             <li>Utilized SAP Business Warehouse to streamline data management and reporting processes for patient data.</li>
         </ul>
-       
-        <h3>Software Developer | CHOC Children's Orange County</h3>
-        <p><strong>April 2019 – December 2019</strong></p>
-        <ul>
-            <li>Developed software applications to streamline healthcare operations and improve patient care processes.</li>
-            <li>Created real-time dashboards using Tableau and Power BI to provide actionable insights across multiple departments.</li>
-            <li>Collaborated with clinical and operational teams to ensure data accuracy and compliance with healthcare regulations (HIPAA).</li>
-        </ul>
-
-        <h3>Software Developer | First Tech Federal Bank</h3>
-        <p><strong>January 2020 – June 2021</strong></p>
-        <ul>
-            <li>Worked on server-side applications and APIs with Node.js and MongoDB for backend systems.</li>
-            <li>Built and maintained microservices using AWS and containerization techniques for better scalability.</li>
-        </ul>
-
-        
-
-        <!-- Add more experience sections as needed -->
     </section>
 
-    <section id="projects">
+    <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="img-container">
             <h3>Tableau Dashboard Example</h3>
             <img src="tableau.jpg.png" alt="Tableau Dashboard">
         </div>
+
         <div class="img-container">
             <h3>Retail Sales Analytics Platform</h3>
             <img src="images/retail_sales.png" alt="Retail Sales Analytics">
             <ul>
-            <li>Developed a research project using retail organization data on Azure Cloud to predict and analyze sales, applying data integration and quality checks to reveal key consumer behavior trends and market insights..</li>
-            <li>Conducted statistical modeling to measure sales performance and provided actionable insights using Tableau</li>
-            <li>Built advanced visualizations to compare and communicate sales patterns, enabling data-driven decision-making for optimized sales strategies</li>
-        </ul>
+                <li>Developed a research project using retail organization data on Azure Cloud to predict and analyze sales, applying data integration and quality checks to reveal key consumer behavior trends and market insights.</li>
+                <li>Conducted statistical modeling to measure sales performance and provided actionable insights using Tableau.</li>
+                <li>Built advanced visualizations to compare and communicate sales patterns, enabling data-driven decision-making for optimized sales strategies.</li>
+            </ul>
         </div>
+
         <div class="img-container">
             <h3>Inventory Management System</h3>
             <img src="images/inventory_management.png" alt="Inventory Management">
             <ul>
-            </1i>Designed and implemented an SQL-based inventory management system on Azure Cloud for a retail organization, enhancing operational efficiency by 10%.</li>
-            </1i>Led the development of ER diagrams, database schema structuring, and creation of data flow and UML diagrams to ensure accuracy.</li>
-            </1i>Utilized Pandas and Python to streamline data processing and analysis, enabling real-time inventory tracking and optimization of supply chain workflows.</li>
-        </ul>
+                <li>Designed and implemented an SQL-based inventory management system on Azure Cloud for a retail organization, enhancing operational efficiency by 10%.</li>
+                <li>Led the development of ER diagrams, database schema structuring, and creation of data flow and UML diagrams to ensure accuracy.</li>
+                <li>Utilized Pandas and Python to streamline data processing and analysis, enabling real-time inventory tracking and optimization of supply chain workflows.</li>
+            </ul>
         </div>
-        <!-- Add more projects or images as needed -->
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <p>If you would like to get in touch with me for projects or opportunities, please feel free to reach out!</p>
         <a href="mailto:vontarys@gmail.com" class="resume-btn">Email Me</a>
     </section>
 
-
-    <section id="resume">
-    <h2>My Resume</h2>
-    <!-- Ensure the resume file is named correctly and located in the right folder -->
-    <a href="SarikaDAresumepdf.pdf" download class="resume-btn">Download Resume</a>
+    <section id="resume" class="resume">
+        <h2>My Resume</h2>
+        <a href="SarikaDAresumepdf.pdf" download class="resume-btn">Download Resume</a>
     </section>
 
+    <footer>
+        <p>&copy; 2024 Sarika Reddy Vontary. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
 
 
