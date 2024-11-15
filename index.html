@@ -4,152 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarika Reddy Vontary - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            max-width: 1200px;
-            padding: 20px;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
-            padding: 50px 0;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
         }
         nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px 0;
         }
         nav a {
-            color: white;
-            padding: 15px;
+            color: #fff;
             text-decoration: none;
-            text-transform: uppercase;
+            margin: 0 15px;
             font-weight: bold;
-            margin: 0 10px;
         }
         nav a:hover {
-            background-color: #4CAF50;
+            text-decoration: underline;
         }
-        .section {
-            margin: 50px 0;
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
         }
-        .about, .professional-experience, .projects, .contact {
-            padding: 30px;
-            background-color: white;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #fff;
+            background-color: #2980b9;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .btn:hover {
+            background-color: #3498db;
+        }
+        .certifications, .projects, .experience {
             margin-bottom: 30px;
         }
-        .section h2 {
-            color: #4CAF50;
-            font-size: 2em;
-            margin-bottom: 20px;
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #34495e;
+            color: #fff;
         }
-        .about p, .professional-experience p, .projects p {
-            font-size: 1.2em;
-            line-height: 1.8;
-        }
-        .projects img {
+        img {
             max-width: 100%;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .contact a {
-            color: #4CAF50;
-            font-size: 1.2em;
-            margin: 0 10px;
-        }
-        .contact a:hover {
-            text-decoration: underline;
+            height: auto;
         }
     </style>
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
         <h1>Sarika Reddy Vontary</h1>
-        <p>Data Analyst | Full Stack Developer | Data Science Enthusiast</p>
+        <p>Software Engineer | Data Analyst | Business Analyst</p>
     </header>
-
-    <!-- Navigation -->
     <nav>
         <a href="#about">About</a>
-        <a href="#experience">Professional Experience</a>
+        <a href="#certifications">Certifications</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Professional Experience</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about">
         <h2>About Me</h2>
-        <p>I'm Sarika, a Data Analyst with a background in Full Stack Development and a passion for Data Science. With over 10 years of experience in data-driven solutions, I have worked with large-scale datasets, built reporting dashboards, automated reporting processes, and developed custom data models. I thrive in cross-functional teams and enjoy turning complex data into actionable insights. Currently, I am enhancing my expertise in Python, Tableau, and AWS cloud technologies to deliver efficient, data-driven outcomes.</p>
+        <p>Software Engineer with expertise in Python, SQL, Tableau, AWS, and automation, delivering impactful data solutions and streamlining processes for improved efficiency.</p>
     </section>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="section professional-experience">
+    <section id="experience">
         <h2>Professional Experience</h2>
-        
-        <!-- Job 1 -->
-        <h3>Data Analyst | Hilton</h3>
-        <p><strong>January 2023 – Present</strong></p>
+        <h3>Software Engineer | Hilton, Virginia (Jan 2023 – Present)</h3>
         <ul>
-            <li>Optimized deployments by analyzing datasets using Python, SQL, and Tableau dashboards.</li>
-            <li>Automated reporting systems with Excel and VBA, reducing reporting time by 80%.</li>
-            <li>Created interactive Tableau dashboards to empower cross-functional teams with real-time data insights.</li>
-            <li>Developed ETL workflows with AWS tools, enhancing data processing capabilities.</li>
+            <li>Optimized deployment processes and dataset analysis using Python, SQL, and Tableau.</li>
+            <li>Automated reporting using Excel and VBA for enhanced data extraction and analysis.</li>
+            <li>Performed data validation for cloud migrations and implemented reporting automation strategies.</li>
         </ul>
-        
-        <!-- Job 2 -->
-        <h3>Business Analyst Intern | Health Net</h3>
-        <p><strong>March 2022 – June 2022</strong></p>
+        <h3>Software Engineer | Health Net, CA (Mar 2022 – Jun 2022)</h3>
         <ul>
-            <li>Created custom Tableau dashboards for operational and strategic decision-making.</li>
-            <li>Automated report generation using Power Automate, saving 30% time.</li>
-            <li>Contributed to the migration of MS Access databases to MS SQL Server.</li>
+            <li>Designed and developed user-friendly Tableau dashboards to enable data-driven decision-making.</li>
+            <li>Collaborated with cross-functional teams to ensure dashboard KPIs aligned with organizational goals.</li>
         </ul>
+        <h3>Software Engineer | CHOC, India (Mar 2020 – May 2021)</h3>
+        <ul>
+            <li>Developed real-time reporting pipelines using AWS Glue, Lambda, and S3.</li>
+            <li>Collaborated with development teams on CI/CD workflows, ensuring seamless project delivery.</li>
+        </ul>
+        <h3>Software Engineer | First Tech Federal Bank (2019 – 2020)</h3>
+        <ul>
+            <li>Automated data workflows and designed SQL-driven financial dashboards for reporting.</li>
+            <li>Utilized Spark and Kafka for streaming and processing large-scale datasets in real-time.</li>
+        </ul>
+       
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
+    <section id="projects">
         <h2>Projects</h2>
-
-        <!-- Project 1 -->
-        <h3>Retail Sales Analytics Platform</h3>
-        <p>Developed a platform for a retail company to analyze and predict sales trends using Tableau and AWS. The system provided actionable insights on consumer behavior, optimizing inventory management and improving sales forecasts.</p>
-        
-        <!-- Tableau Image -->
-        <img src="your-tableau-dashboard-image.png" alt="Tableau Dashboard Example">
-
-        <!-- Project 2 -->
-        <h3>Inventory Management System</h3>
-        <p>Designed and implemented an inventory management system using SQL and Python for data integration and analysis. The solution increased operational efficiency by 15% and reduced inventory tracking errors by 30%.</p>
+        <div>
+            <h3>Retail Sales Analytics Platform</h3>
+            <ul>
+                <li>Developed a research project to analyze retail organization data and predict sales trends using Azure Cloud.</li>
+                <li>Utilized Python and Tableau for actionable insights and data visualization.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Inventory Management System</h3>
+            <ul>
+                <li>Designed a scalable SQL-based inventory management system using Azure Cloud services.</li>
+                <li>Streamlined data processing with Python and Pandas, improving operational efficiency.</li>
+            </ul>
+            <img src="tableau_dashboard.png" alt="Tableau.jp.png" style="width:100%; height:auto; margin-top:10px;">
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h2>Contact</h2>
-        <p>Feel free to get in touch with me for any collaboration or inquiries.</p>
-        <a href="https://www.linkedin.com/in/sarika-reddy-v/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/sarika0125" target="_blank">GitHub</a> |
-        <a href="your-resume-link.pdf" target="_blank">Resume</a>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified Scrum Product Owner (CSPO) – Scrum Alliance</li>
+            <li>SQL for Data Analysis</li>
+            <li>Practical GitHub Actions</li>
+        </ul>
     </section>
 
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Connect with me via the links below:</p>
+        <a href="https://www.linkedin.com/in/sarika-reddy" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/sarika0125" target="_blank"><img src="github.png" alt="GitHub"></a>
+        <p><a href="mailto:vontarys@gmail.com" class="btn">Email Me</a></p>
+        <p><a href="files/Sarika_Resume.pdf" download class="btn">Download Resume</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sarika Reddy Vontary</p>
+    </footer>
 </body>
 </html>
