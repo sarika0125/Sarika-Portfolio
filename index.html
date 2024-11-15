@@ -1,122 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarika's Portfolio</title>
+    <meta name="description" content="Sarika Reddy Vontary's Resume">
+    <meta name="author" content="Sarika Reddy Vontary">
+    <title>Sarika Reddy Vontary - Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2d3b43;
+        }
+        .contact-info {
+            margin: 0;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2d3b43;
+            margin-top: 20px;
+        }
+        .experience, .education, .projects, .certifications {
+            margin-bottom: 20px;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 15px;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .skills-list li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
-
 <body>
+    <div class="container">
+        <header>
+            <h1>Sarika Reddy Vontary</h1>
+            <p class="contact-info">
+                <strong>Phone:</strong> 217-790-7537 | 
+                <strong>Email:</strong> <a href="mailto:vontarys@gmail.com">vontarys@gmail.com</a> | 
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sarika-reddy-v" target="_blank">Sarika Reddy V</a> | 
+                <strong>GitHub:</strong> <a href="https://github.com/sarika0125" target="_blank">sarika0125</a>
+            </p>
+        </header>
 
-    <header>
-        <h1>Sarika Reddy Vontary</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
-            <a href="#resume">Resume</a>
-            <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/yourlinkedinusername/" target="_blank">LinkedIn</a>
-        </nav>
-    </header>
+        <section class="education">
+            <h2 class="section-title">Education</h2>
+            <p><strong>University of Eastern Illinois</strong> — MS in Computer Technology</p>
+            <p>August 2021 – December 2022</p>
+            <p><strong>University of JNTUH</strong> — BS in Computer Science and Engineering</p>
+            <p>August 2014 – May 2018</p>
+        </section>
 
-    <section id="about" class="about">
-        <div class="section-title">ABOUT ME</div>
-        <p>Hello! I'm Sarika Reddy Vontary, a passionate Software Engineer with experience in data analysis, software development, and cloud computing. I specialize in developing scalable applications using modern technologies like Python, Java, and AWS.</p>
-        <p>I have worked on a variety of projects ranging from building ETL pipelines, automating reporting systems, to developing custom dashboards using tools like Tableau, Power BI, and Looker. My goal is to create software solutions that drive data-driven decisions and optimize business processes.</p>
-    </section>
+        <section class="experience">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Data Analyst | Hilton, Virginia</h3>
+                <p>January 2023 – Present</p>
+                <ul>
+                    <li>Optimized deployments with Future Business Machines by analyzing datasets using Python, SQL, and Tableau, Looker dashboards to generate insightful reports.</li>
+                    <li>Automated reporting system based on Excel and VBA to simplify data extraction and analysis, reducing reporting time from 10 hours per week to 2 hours.</li>
+                    <li>Developed ETL workflows with Hive and Hadoop to streamline data processing and enhance reporting efficiency.</li>
+                    <li>Developed scripts for importing/exporting data across multiple environments, migrated SQL Server, and worked on AWS to generate clean files in Amazon S3 and deploy files to Amazon EC2 Clusters.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Business Analyst Intern | Health Net, CA</h3>
+                <p>March 2022 – June 2022</p>
+                <ul>
+                    <li>Developed custom Tableau dashboards to empower cross-functional teams with immediate, action-driven business KPIs which enabled ad-hoc report requests to be reduced by 12 hours per week and lessened dependency on the data team.</li>
+                    <li>Utilized SAP Business Warehouse to streamline data management and reporting processes for patient data.</li>
+                    <li>Streamlined customer survey reporting with Power Automate, Qualtrics saving 30% time and increased accuracy.</li>
+                    <li>Reduced latency by 42% and secured business operations for its customers, successfully migrated MS Access DB to MS SQL Server.</li>
+                </ul>
+            </div>
 
-    <section id="experience" class="experience">
-        <div class="section-title">EXPERIENCE</div>
+            <div class="experience-item">
+                <h3>Data Analyst | CHOC, India</h3>
+                <p>March 2020 – May 2021</p>
+                <ul>
+                    <li>Developed CI/CD workflows and built 20 real-time reports using AWS Glue and AWS Lambda for scheduling and automation, providing insights that improved budget accuracy by 15% and enhanced sponsor and stakeholder efficiency.</li>
+                    <li>Architected scalable system infrastructures leveraging AWS services like Amazon Redshift and Amazon RDS to ensure flexibility and scalability in handling evolving data requirements.</li>
+                    <li>Automated integration pipelines using Python scripts and Bash, reducing manual effort by 40% and enhancing reliability.</li>
+                    <li>Utilized Amazon Kinesis and AWS EMR with Apache Spark to process and analyze large datasets in real-time with distributed data processing.</li>
+                </ul>
+            </div>
 
-        <div class="job">
-            <p><strong>Software Engineer | Hilton, Virginia</strong> (January 2023 – Present)</p>
+            <div class="experience-item">
+                <h3>Data Developer | First Federal Bank, India</h3>
+                <p>August 2018 – January 2020</p>
+                <ul>
+                    <li>Rest API to interface with Sybase databases, increasing transfer efficiency by 70%.</li>
+                    <li>Skilled in using Oracle for large-scale data management, including PL/SQL for complex data manipulation, and implementing high availability and robust security measures.</li>
+                    <li>Created custom Power BI visuals and dashboards using DAX queries for data-driven decision-making.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-item">
+                <h3>Retail Sales Analytics Platform</h3>
+                <p>November 2023 | Technologies: Django, SQL, Pivot Tables</p>
+                <ul>
+                    <li>Developed a research project using retail organization data on Azure Cloud to predict and analyze sales, applying data integration and quality checks to reveal key consumer behavior trends and market insights.</li>
+                    <li>Conducted statistical modeling to measure sales performance and provided actionable insights using Tableau.</li>
+                    <li>Built advanced visualizations to compare and communicate sales patterns, enabling data-driven decision-making for optimized sales strategies.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Inventory Management System</h3>
+                <p>March 2022 | Technologies: Python, NumPy, D3.js, Pandas</p>
+                <ul>
+                    <li>Designed and implemented an SQL-based inventory management system on Azure Cloud for a retail organization, enhancing operational efficiency by 10%.</li>
+                    <li>Led the development of ER diagrams, database schema structuring, and creation of data flow and UML diagrams to ensure accuracy.</li>
+                    <li>Utilized Pandas and Python to streamline data processing and analysis, enabling real-time inventory tracking and optimization of supply chain workflows.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2 class="section-title">Certifications</h2>
             <ul>
-                <li>Optimized deployments with Future Business Machines by analyzing datasets using Python, SQL, and Tableau, Looker dashboards to generate insightful reports.</li>
-                <li>Automated reporting system based on Excel and VBA to simplify data extraction and analysis, reducing reporting time from 10 hours per week to 2 hours.</li>
-                <li>Developed ETL workflows with Hive and Hadoop to streamline data processing and enhance reporting efficiency.</li>
-                <li>Developed scripts for importing/exporting data across multiple environments, migrated SQL Server, and worked on AWS to generate clean files in Amazon S3 and deploy files to Amazon EC2 Clusters.</li>
+                <li>Certified Scrum Product Owner (CSPO) - Scrum Alliance</li>
+                <li>SQL for Data Analysis</li>
+                <li>Practical GitHub Actions</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="job">
-            <p><strong>Business Analyst Intern | Health Net, CA</strong> (March 2022 – June 2022)</p>
-            <ul>
-                <li>Developed custom Tableau dashboards to empower cross-functional teams with immediate, action-driven business KPIs.</li>
-                <li>Utilized SAP Business Warehouse to streamline data management and reporting processes for patient data.</li>
-                <li>Streamlined customer survey reporting with Power Automate, Qualtrics saving 30% time and increasing accuracy.</li>
-                <li>Reduced latency by 42% and successfully migrated MS Access DB to MS SQL Server.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <p><strong>Software Engineer | CHOC, India</strong> (March 2020 – May 2021)</p>
-            <ul>
-                <li>Developed CI/CD workflows using AWS Glue and Lambda to automate reporting, enhancing efficiency by 15%.</li>
-                <li>Architected scalable systems using AWS services like Redshift and RDS for handling evolving data requirements.</li>
-                <li>Automated integration pipelines with Python, Bash, and AWS services, reducing manual effort by 40%.</li>
-            </ul>
-            <p><strong>Software Developer | First Federal Bank, India</strong> (August 2018 – January 2020)</p>
-        <ul>
-            <li>Developed REST API to interface with Sybase databases, increasing transfer efficiency by 70%.</li>
-            <li>Skilled in using Oracle for large-scale data management, including PL/SQL for complex data manipulation, and implementing high availability and robust security measures.</li>
-            <li>Created custom Power BI visuals and dashboards using DAX queries for data-driven decision-making.</li>
-        </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="section-title">PROJECTS</div>
-
-        <p><strong>Retail Sales Analytics Platform</strong> – Django, SQL, Pivot Tables (November 2023)</p>
-        <ul>
-            <li>Developed a research project using retail data on Azure Cloud to predict and analyze sales trends.</li>
-            <li>Utilized Tableau for insights and visualizations, enabling data-driven decisions for optimized sales strategies.</li>
-        </ul>
-
-        <p><strong>Inventory Management System</strong> – Python, NumPy, D3.js, Pandas (March 2022)</p>
-        <ul>
-            <li>Designed and implemented an inventory management system on Azure Cloud, improving operational efficiency by 10%.</li>
-            <li>Developed ER diagrams and database schema for accurate data structuring and optimization.</li>
-        </ul>
-
-        <div class="img-container">
-            <h3>Tableau Dashboard Example</h3>
-            <img src="tableau.jpg.png" alt="Tableau Dashboard">
-        </div>
-    </section>
-
-    <section id="certifications" class="certifications">
-        <div class="section-title">CERTIFICATIONS</div>
-        <ul>
-            <li>Python for beginners</li>
-            <li>Git</li>
-            <li>Certified Scrum Product Owner (CSPO)</li>
-            <li>SQL for Data Analysis</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="section-title">CONTACT</div>
-        <p>If you would like to get in touch with me for projects or opportunities, please feel free to reach out!</p>
-        <a href="mailto:vontarys@gmail.com" class="resume-btn">Email Me</a>
-    </section>
-
-    <section id="resume" class="resume">
-        <div class="section-title">MY RESUME</div>
-        <a href="SarikaDAresumepdf.pdf" download class="resume-btn">Download Resume</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Sarika Reddy Vontary. All rights reserved.</p>
-    </footer>
-
-</body>
-
-</html>
+        <section class="technical-skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> Python, Java, SQL (Postgres, MS-SQL, MySQL), JavaScript, TypeScript, HTML, XML, JSON, CSS</li>
+                <li><strong>Frameworks:</strong> jQuery, Node.js, Flask, Django, Bootstrap</li>
+                <li><strong>DevOps and API Tools:</strong> Git, Docker, OpenShift, Kubernetes, Azure DevOps, Swagger, Postman</li>
+                <li><strong>Cloud and Security Tools:</strong> AWS, Azure Cloud, SQL Server, SSRS, Linux (Configuring and Managing)</li>
+                <li><strong>Others:</strong> Data Modeling, Agile (Scrum), JIRA, Design Patterns, Power BI, Quick Sight, Informatica, Debugging, Regression,
 
