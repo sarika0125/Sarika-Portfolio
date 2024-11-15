@@ -6,90 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarika's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        header nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        header nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 40px;
-            margin: 20px 0;
-            background-color: white;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #333;
-        }
-
-        .about, .projects, .contact, .experience {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .resume-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .resume-btn:hover {
-            background-color: #45a049;
-        }
-
-        .img-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .img-container img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -113,51 +30,72 @@
 
     <section id="experience" class="experience">
         <h2>Experience</h2>
-
-        <h3>Software Engineer | Hilton, Virginia</h3>
-        <p><strong>January 2023 – Present</strong></p>
+        <div class="section-title">EXPERIENCE</div>
+        <p><strong>Software Engineer | Hilton, Virginia</strong> (January 2023 – Present)</p>
         <ul>
-            <li>Optimized deployments with Future Business Machines by analyzing datasets using Python, SQL, Tableau, and Looker dashboards to generate insightful reports.</li>
+            <li>Optimized deployments with Future Business Machines by analyzing datasets using Python, SQL, and Tableau, Looker dashboards to generate insightful reports.</li>
             <li>Automated reporting system based on Excel and VBA to simplify data extraction and analysis, reducing reporting time from 10 hours per week to 2 hours.</li>
             <li>Developed ETL workflows with Hive and Hadoop to streamline data processing and enhance reporting efficiency.</li>
             <li>Developed scripts for importing/exporting data across multiple environments, migrated SQL Server, and worked on AWS to generate clean files in Amazon S3 and deploy files to Amazon EC2 Clusters.</li>
         </ul>
-
-        <h3>Business Analyst Intern | Health Net, CA</h3>
-        <p><strong>March 2022 – June 2022</strong></p>
+        <p><strong>Business Analyst Intern | Health Net, CA</strong> (March 2022 – June 2022)</p>
         <ul>
-            <li>Developed custom Tableau dashboards to empower cross-functional teams with immediate, action-driven business KPIs.</li>
+            <li>Developed custom Tableau dashboards to empower cross-functional teams with immediate, action-driven business KPIs which enabled ad-hoc report requests to be reduced by 12 hours per week and lessened dependency on the data team.</li>
             <li>Utilized SAP Business Warehouse to streamline data management and reporting processes for patient data.</li>
+            <li>Streamlined customer survey reporting with Power Automate, Qualtrics saving 30% time and increasing accuracy.</li>
+            <li>Reduced latency by 42% and secured business operations for its customers, successfully migrated MS Access DB to MS SQL Server.</li>
+        </ul>
+        <p><strong>Software Engineer | CHOC, India</strong> (March 2020 – May 2021)</p>
+        <ul>
+            <li>Developed CI/CD workflows and built 20 real-time reports using AWS Glue and AWS Lambda for scheduling and automation, providing insights that improved budget accuracy by 15% and enhanced sponsor and stakeholder efficiency.</li>
+            <li>Architected scalable system infrastructures leveraging AWS services like Amazon Redshift and Amazon RDS to ensure flexibility and scalability in handling evolving data requirements.</li>
+            <li>Automated integration pipelines using Python scripts and Bash, reducing manual effort by 40% and enhancing reliability. Utilized Amazon Kinesis and AWS EMR with Apache Spark to process and analyze large datasets in real-time with distributed data processing.</li>
+        </ul>
+        <p><strong>Software Developer | First Federal Bank, India</strong> (August 2018 – January 2020)</p>
+        <ul>
+            <li>Developed REST API to interface with Sybase databases, increasing transfer efficiency by 70%.</li>
+            <li>Skilled in using Oracle for large-scale data management, including PL/SQL for complex data manipulation, and implementing high availability and robust security measures.</li>
+            <li>Created custom Power BI visuals and dashboards using DAX queries for data-driven decision-making.</li>
         </ul>
     </section>
 
     <section id="projects" class="projects">
         <h2>Projects</h2>
+        <div class="section-title">PROJECTS</div>
+        <p><strong>Project 1 | Retail Sales Analytics Platform</strong> – Django, SQL, Pivot Tables (November 2023)</p>
+        <ul>
+            <li>Developed a research project using retail organization data on Azure Cloud to predict and analyze sales, applying data integration and quality checks to reveal key consumer behavior trends and market insights.</li>
+            <li>Conducted statistical modeling to measure sales performance and provided actionable insights using Tableau.</li>
+            <li>Built advanced visualizations to compare and communicate sales patterns, enabling data-driven decision-making for optimized sales strategies.</li>
+        </ul>
+        <p><strong>Project 2 | Inventory Management System</strong> – Python, NumPy, D3.js, Pandas (March 2022)</p>
+        <ul>
+            <li>Designed and implemented an SQL-based inventory management system on Azure Cloud for a retail organization, enhancing operational efficiency by 10%.</li>
+            <li>Led the development of ER diagrams, database schema structuring, and creation of data flow and UML diagrams to ensure accuracy.</li>
+            <li>Utilized Pandas and Python to streamline data processing and analysis, enabling real-time inventory tracking and optimization of supply chain workflows.</li>
+        </ul>
         <div class="img-container">
             <h3>Tableau Dashboard Example</h3>
             <img src="tableau.jpg.png" alt="Tableau Dashboard">
         </div>
-
         <div class="img-container">
             <h3>Retail Sales Analytics Platform</h3>
             <img src="images/retail_sales.png" alt="Retail Sales Analytics">
-            <ul>
-                <li>Developed a research project using retail organization data on Azure Cloud to predict and analyze sales, applying data integration and quality checks to reveal key consumer behavior trends and market insights.</li>
-                <li>Conducted statistical modeling to measure sales performance and provided actionable insights using Tableau.</li>
-                <li>Built advanced visualizations to compare and communicate sales patterns, enabling data-driven decision-making for optimized sales strategies.</li>
-            </ul>
         </div>
-
         <div class="img-container">
             <h3>Inventory Management System</h3>
             <img src="images/inventory_management.png" alt="Inventory Management">
-            <ul>
-                <li>Designed and implemented an SQL-based inventory management system on Azure Cloud for a retail organization, enhancing operational efficiency by 10%.</li>
-                <li>Led the development of ER diagrams, database schema structuring, and creation of data flow and UML diagrams to ensure accuracy.</li>
-                <li>Utilized Pandas and Python to streamline data processing and analysis, enabling real-time inventory tracking and optimization of supply chain workflows.</li>
-            </ul>
         </div>
     </section>
+    <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>git learnings</li>
+        <li>python for beginners</li>
+        <li>Certified Scrum Product Owner (CSPO)</li>
+        <li>SQL for Data Analysis</li>
+    </ul>
+</section>
 
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
@@ -177,7 +115,5 @@
 </body>
 
 </html>
-
-
 
 
