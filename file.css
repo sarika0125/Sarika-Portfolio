@@ -58,6 +58,16 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #2980b9; /* Optional: Add a border */
+}
+
+
 .logo {
   font-size: 2rem;
 }
